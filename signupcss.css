@@ -1,0 +1,267 @@
+
+body{
+  background-image: url(./images/roman-kraft-j6CI1JcuU9w-unsplash.jpg);
+  scroll-behavior: smooth;
+}
+.space {
+  height: 9.4vh;
+  width: 100%;
+}
+input[type="checkbox"] {
+  display: none;
+}
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+/* NAVBAR STYLING STARTS */
+.navbar {
+  align-self: center;
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 97.5vw;
+  justify-content: space-between;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  z-index: 30;
+  background-color: black;
+  color: #fff;
+  vertical-align: middle !important;
+}
+.nav-links a {
+  color: #fff;
+}
+
+/* LOGO */
+
+.logo {
+  font-size: 32px;
+}
+.logo img {
+  height: 10vh;
+  left: 0;
+  display: flexbox;
+  vertical-align: middle;
+}
+/* NAVBAR MENU */
+
+.menu {
+  display: flex;
+
+  gap: 1em;
+
+  font-size: 18px;
+}
+
+.menu li:hover {
+  background-color: black;
+
+  border-radius: 5px;
+
+  transition: 0.3s ease;
+}
+
+.menu li {
+  padding: 5px 14px;
+}
+
+/* DROPDOWN MENU */
+
+.services {
+  position: relative;
+}
+
+.dropdown {
+  background-color: black;
+
+  padding: 1em 0;
+
+  position: absolute; /*WITH RESPECT TO PARENT*/
+
+  display: none;
+
+  border-radius: 8px;
+
+  top: 35px;
+}
+
+.dropdown li + li {
+  margin-top: 10px;
+}
+
+.dropdown li {
+  padding: 0.5em 1em;
+
+  width: 8em;
+
+  text-align: center;
+}
+
+.dropdown li:hover {
+  background-color: black;
+}
+
+.services:hover .dropdown {
+  display: block;
+}
+/*HAMBURGER MENU*/
+
+.hamburger {
+  display: none;
+  font-size: 40px;
+  user-select: none;
+  margin-right: 15px;
+}
+
+.card{
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.4);
+  padding: 3%;
+  background: white;
+  position: fixed;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  opacity: 80%;
+  
+}
+
+.card:hover{
+  box-shadow: rgba(42, 12, 12, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+}
+.left h2{
+  font-size: 30px;
+  color :#000000;
+  text-align: center;
+}
+
+
+.left p{
+  font-size: 40px;
+  color :black;
+  font-weight: bold;
+}
+
+
+.group label,
+.group input,
+.group button
+{
+  display: block;
+  margin-top:10px ;
+margin-bottom : 10px ;
+}
+.group button{
+ margin-left: 130px;
+ background: #000000 ;
+ border: none;
+color: white;
+height: 30px;
+width: 90px;
+border-radius: 10px;
+font-weight: bold;   
+text-transform: uppercase;
+
+}
+input{
+  
+  height: 30px;
+  width: 350px;
+}
+
+label{
+  font-size: 20px;
+  color :#000000;
+
+}
+a{
+  font-size: 15px;
+  color :rgba(128, 128, 128, 0.578);
+}
+
+.rg{
+  padding-top: 20px;
+  font-size: 15px;
+  color :rgba(128, 128, 128, 0.578);
+}
+.rg a{
+  font-size: 15px;
+  color :#000000;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 0.8vw;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgba(85, 33, 33, 0.64);
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(0, 0, 0);
+  border-radius: 5px;
+}
+@media (max-width: 1050px) {
+  .centered {
+    margin-left: 15% !important;
+  }
+  #images {
+    width: 100%;
+  }
+
+  .menu {
+    display: none;
+    position: absolute;
+
+    background-color: black;
+
+    right: 0;
+
+    left: 0;
+    width: 100vw;
+
+    text-align: center;
+
+    padding: 16px 0;
+  }
+
+  .menu li:hover {
+    display: inline-block;
+
+    background-color: black;
+
+    transition: 0.3s ease;
+  }
+
+  .menu li + li {
+    margin-top: 12px;
+  }
+
+  input[type="checkbox"]:checked ~ .menu {
+    display: block;
+  }
+
+  .hamburger {
+    display: block !important;
+    color: white !important;
+  }
+
+  .dropdown {
+    left: 50%;
+    top: 30px;
+    transform: translateX(35%);
+  }
+
+  .dropdown li:hover {
+    background-color: black;
+  }

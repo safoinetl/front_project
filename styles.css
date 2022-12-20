@@ -1,0 +1,611 @@
+body {
+  background-image: url("./images/roman-kraft-j6CI1JcuU9w-unsplash\ \(1\).jpg"); /* The image used */
+  background-color: #cccccc; /* Used if the image is unavailable */
+  /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-attachment: fixed;
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  margin: auto;
+  scroll-behavior: smooth;
+}
+.space {
+  height: 9.4vh;
+  width: 100%;
+}
+input[type="checkbox"] {
+  display: none;
+}
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+/* NAVBAR STYLING STARTS */
+.navbar {
+  align-self: center;
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 97.5vw;
+  justify-content: space-between;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  z-index: 30;
+  background-color: black;
+  color: #fff;
+  vertical-align: middle !important;
+}
+.nav-links a {
+  color: #fff;
+  font-size: 20px;
+  
+}
+
+/* LOGO */
+
+.logo {
+  font-size: 32px;
+}
+.logo img {
+  height: 10vh;
+  left: 0;
+  display: flexbox;
+  vertical-align: middle;
+}
+/* NAVBAR MENU */
+
+.menu {
+  display: flex;
+
+  gap: 1em;
+
+  font-size: 18px;
+}
+
+.menu li:hover {
+  background-color: black;
+
+  border-radius: 5px;
+
+  transition: 0.3s ease;
+}
+
+.menu li {
+  padding: 5px 14px;
+}
+
+/* DROPDOWN MENU */
+
+.services {
+  position: relative;
+}
+
+.dropdown {
+  background-color: black;
+
+  padding: 1em 0;
+
+  position: absolute; /*WITH RESPECT TO PARENT*/
+
+  display: none;
+
+  border-radius: 8px;
+
+  top: 35px;
+}
+
+.dropdown li + li {
+  margin-top: 10px;
+}
+
+.dropdown li {
+  padding: 0.5em 1em;
+
+  width: 8em;
+
+  text-align: center;
+}
+
+.dropdown li:hover {
+  background-color: black;
+}
+
+.services:hover .dropdown {
+  display: block;
+}
+/*HAMBURGER MENU*/
+
+.hamburger {
+  display: none;
+  font-size: 40px;
+  user-select: none;
+  margin-right: 15px;
+}
+
+/* APPLYING MEDIA QUERIES */
+@media (max-width: 1600px) {
+  .Carousel #register-us2 {
+    color: rgb(134, 29, 29) !important;
+    top: 20% !important;
+    left: 40% !important;
+    font-size: 50px !important;
+  }
+  .Carousel #register-us1 {
+    color: black !important;
+    top: 10% !important;
+    left: 10% !important;
+    font-size: 50px !important;
+  }
+}
+
+@media (max-width: 1050px) {
+  .centered {
+    margin-left: 15% !important;
+  }
+  #images {
+    width: 100%;
+  }
+
+  .menu {
+    display: none;
+    position: absolute;
+
+    background-color: black;
+
+    right: 0;
+
+    left: 0;
+    width: 100vw;
+
+    text-align: center;
+
+    padding: 16px 0;
+  }
+
+  .menu li:hover {
+    display: inline-block;
+
+    background-color: black;
+
+    transition: 0.3s ease;
+  }
+
+  .menu li + li {
+    margin-top: 12px;
+  }
+
+  input[type="checkbox"]:checked ~ .menu {
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .dropdown {
+    left: 50%;
+
+    top: 30px;
+
+    transform: translateX(35%);
+  }
+
+  .dropdown li:hover {
+    background-color: black;
+  }
+  .cards {
+    display: block !important;
+  }
+  .card {
+    width: 80% !important;
+  }
+  .card-article {
+    width: 80% !important;
+  }
+}
+.Carousel #register-us1 {
+  position: absolute;
+  top: 35%;
+  left: 45%;
+  color: white;
+  font-size: 70px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.Carousel #register-us2 {
+  position: absolute;
+  top: 45%;
+  left: 60%;
+  color: white;
+  font-size: 70px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.Carouse #register-us3{
+position: absolute;
+top: 70%;
+left: 70%;
+color: black;
+font-size: 70px;
+padding: 12px 24px;
+border: none;
+cursor: pointer;
+border-radius: 5px;
+}
+.Carousel {
+  margin: auto !important;
+  text-align: center;
+  border-radius: 10px;
+  width: 100%;
+  padding-bottom: 70px;
+  box-shadow: 0px 2px 6px rgba(85, 33, 33, 0.64);
+  position: relative;
+  background-color: #cccccc;
+
+  transition: background-color 1s linear;
+  background-image: url("./images/lightened-luxury-sedan-car-darkness-with-headlamps-rear-lights-lit-realistic-image-reflection_1284-28803.webp"); /* The image used */
+  background-color: #cccccc;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.carousel-inner {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-open:checked + .carousel-item {
+  position: static;
+  opacity: 50;
+}
+
+.carousel-item {
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: opacity 0.6s ease-out;
+  transition: opacity 0.6s ease-out;
+}
+
+.carousel-item img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+.carousel-control {
+  background: rgba(85, 33, 33, 0.64);
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+  font-size: 40px;
+  height: 40px;
+  line-height: 35px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  cursor: pointer;
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  text-align: center;
+  width: 40px;
+  z-index: 10;
+}
+
+.carousel-control.prev {
+  left: 2%;
+}
+
+.carousel-control.next {
+  right: 2%;
+}
+
+.carousel-control:hover {
+  background: rgba(0, 0, 0, 0.8);
+  color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3 {
+  display: block;
+}
+
+.carousel-indicators {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 2%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 10;
+}
+
+.carousel-indicators li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.carousel-bullet {
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-size: 40px;
+}
+
+.carousel-bullet:hover {
+  color: #aaaaaa;
+}
+
+#carousel-1:checked
+  ~ .control-1
+  ~ .carousel-indicators
+  li:nth-child(1)
+  .carousel-bullet,
+#carousel-2:checked
+  ~ .control-2
+  ~ .carousel-indicators
+  li:nth-child(2)
+  .carousel-bullet,
+#carousel-3:checked
+  ~ .control-3
+  ~ .carousel-indicators
+  li:nth-child(3)
+  .carousel-bullet {
+  color: rgba(85, 33, 33, 0.64);
+}
+
+#title {
+  width: 100%;
+  position: absolute;
+  padding: 0px;
+  margin: 0px auto;
+  text-align: center;
+  font-size: 27px;
+  color: rgba(255, 255, 255, 1);
+  font-family: "Open Sans", sans-serif;
+  z-index: 9999;
+  text-shadow: 0px 1px 2px rgba(85, 33, 33, 0.64),
+    -1px 0px 2px rgba(255, 255, 255, 0);
+}
+.card {
+  margin-top: 10%;
+  box-shadow: 0 4px 8px 0 rgba(85, 33, 33, 0.64);
+  transition: 2s;
+  width: 25%;
+  margin-left: 2%;
+  margin-right: 2%;
+  border-radius: 8px;
+  background-color: #cccccc;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+}
+#card-image {
+  height: 50vh;
+  width: 100%;
+}
+
+#card-image-article {
+  height: 45vh;
+}
+
+.article {
+  text-align: center;
+  margin-top: 10%;
+  padding-bottom: 2%;
+  overflow:auto;
+  white-space: nowrap;
+  display: flex;
+}
+.card-article {
+  box-shadow: 0 4px 8px 0 rgba(85, 33, 33, 0.64);
+  transition: 2s;
+  width: 50%;
+  margin-left: 4%;
+  margin-right: 4%;
+  border-radius: 8px;
+  background-color: #cccccc;
+  border-radius: 4%;
+}
+
+.footer {
+  padding: 40px 0;
+  background-color: black;
+  color: white;
+}
+
+.footer .social {
+  text-align: center;
+  padding-bottom: 25px;
+  color: #4b4c4d;
+}
+.social a {
+  background-color: whiTE;
+}
+.footer .social a {
+  font-size: 24px;
+  color: inherit;
+  border: 1px solid #ccc;
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 8px;
+  opacity: 0.75;
+}
+
+.footer .social a:hover {
+  opacity: 0.9;
+}
+
+.footer ul {
+  margin-top: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.footer ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.footer ul li {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+.footer ul a:hover {
+  opacity: 1;
+}
+
+.footer .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 0.8vw;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgba(85, 33, 33, 0.64);
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(0, 0, 0);
+  border-radius: 5px;
+}
+.book {
+  background-color: white;
+  width: 90%;
+  margin: 3% auto;
+  vertical-align: middle;
+  opacity: 80%;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background: var(--orange);
+  color: rgb(94, 7, 7);
+  padding: 0.8rem 3rem;
+  border: 0.2rem solid var(--orange);
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+
+.btn:hover {
+  color: var(--orange);
+}
+.book .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+}
+.book .row .image {
+  flex: 1 1 40rem;
+}
+
+.book .row .image img {
+  width: 100%;
+}
+.book .row form {
+  flex: 1 1 40rem;
+  padding: 2rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+}
+
+.book .row form .inputBox {
+  padding: 0.5rem 0;
+}
+
+.book .row form .inputBox input {
+  width: 100%;
+  padding: 1rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  font-size: 1.7rem;
+  color: #333;
+  text-transform: none;
+}
+
+.book .row form .inputBox h3 {
+  font-size: 2rem;
+  padding: 1rem 0;
+  color: #666;
+}
+.contact .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.contact .row .image {
+  flex: 1 1 35rem;
+}
+
+.contact .row .image img {
+  width: 100%;
+}
+
+.contact .row form {
+  flex: 1 1 50rem;
+  padding: 2rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+}
+
+.contact .row form .inputBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contact .row form .inputBox input,
+.contact .row form textarea,
+select {
+  width: 100%;
+  margin: 1rem 0;
+  padding: 1rem;
+  font-size: 1.7rem;
+  color: #333;
+  background: #f7f7f7;
+  text-transform: none;
+}
+
+.contact .row form textarea {
+  height: 15rem;
+  resize: none;
+  width: 100%;
+}

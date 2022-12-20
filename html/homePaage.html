@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Luxury Cars</title>
+    <link
+      rel="shortcut icon"
+      href="../images/car_red.png"
+      type="image/x-icon"
+    />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <!-- LOGO -->
+
+      <div class="logo">
+        <b> <i> Luxury cars </i> </b>
+        <img src="../images/car_icon.png" alt="logo" />
+      </div>
+
+      <!-- NAVIGATION MENU -->
+
+      <ul class="nav-links">
+        <!-- USING CHECKBOX HACK -->
+
+        <input type="checkbox" id="checkbox_toggle" />
+        <label for="checkbox_toggle" class="hamburger">☰</label>
+
+        <!-- NAVIGATION MENUS -->
+
+        <div class="menu">
+          <li><a href="homePaage.html"> <b> Home</b></a></li>
+
+          <li><a href="#footer"> <b> About </b></a></li>
+
+          <li class="services">
+            <a href="#"> <b> Services </b></a>
+
+            <!-- DROPDOWN MENU -->
+
+            <ul class="dropdown">
+              <li><a href="#"><b>Dropdown 1</b> </a></li>
+
+              <li><a href="#"><b>Dropdown 2</b></a></li>
+
+              <li><a href="#"><b>Dropdown 3</b></a></li>
+            </ul>
+          </li> 
+
+          <li><a href="#pricing"> <b> Pricing</b></a></li>
+
+          <li><a href="./login.html"> <b> Login</b></a></li>
+        </div>
+      </ul>
+    </nav>
+
+    <div class="space"></div>
+    <div class="Carousel">
+      <div class="carousel-inner">
+        <input
+          class="carousel-open"
+          type="radio"
+          id="carousel-1"
+          name="carousel"
+          aria-hidden="true"
+          hidden=""
+          checked="checked"
+        />
+        <div class="carousel-item">
+          <div style="display: block">
+            <a href="../html/signup.html">
+              <h1 id="register-us1">BE A MAN</h1>
+            </a>
+            <a href="../html/signup.html">
+              <h1 id="register-us2">JOIN US</h1>
+            </a>
+          </div>
+          <img src="../images/car_icon1.png" alt="" />
+        </div>
+        <input
+          class="carousel-open"
+          type="radio"
+          id="carousel-2"
+          name="carousel"
+          aria-hidden="true"
+          hidden=""
+        />
+        <div class="carousel-item">
+          <img src="../images/car_icon.png" />
+        </div>
+        <input
+          class="carousel-open"
+          type="radio"
+          id="carousel-3"
+          name="carousel"
+          aria-hidden="true"
+          hidden=""
+        />
+        <div class="carousel-item">
+          <div style="display: block">
+            <a href="#pricing">
+              <h1 id="register-us1">WHAT COLOR</h1>
+            </a>
+            <a href="#pricing">
+              <h1 id="register-us2">IS YOUR BUGATTI ?</h1>
+            </a>
+
+          </div>
+          <img src="../images/Andrew-Tate-Cars-1024x576.webp" style="width:50%" />
+        </div>
+        <label for="carousel-3" class="carousel-control prev control-1"
+          >‹</label
+        >
+        <label for="carousel-2" class="carousel-control next control-1"
+          >›</label
+        >
+        <label for="carousel-1" class="carousel-control prev control-2"
+          >‹</label
+        >
+        <label for="carousel-3" class="carousel-control next control-2"
+          >›</label
+        >
+        <label for="carousel-2" class="carousel-control prev control-3"
+          >‹</label
+        >
+        <label for="carousel-1" class="carousel-control next control-3"
+          >›</label
+        >
+
+        <ol class="carousel-indicators">
+          <li>
+            <label for="carousel-1" class="carousel-bullet">•</label>
+          </li>
+          <li>
+            <label for="carousel-2" class="carousel-bullet">•</label>
+          </li>
+          <li>
+            <label for="carousel-3" class="carousel-bullet">•</label>
+          </li>
+        </ol>
+      </div>
+    </div>
+    <div class="centered">
+      <section class="cards">
+        <div class="card">
+          <img
+            id="card-image"
+            src="../images/tamas-tuzes-katai-rEn-AdBr3Ig-unsplash.jpg"
+            alt="info"
+          />
+          <div style="text-align: center">
+            <h2><b>where can you find us ?</b></h2>
+            <p>إقامة إيناس، App B2، Boulevard de la Terre, تونس 1003، تونس</p>
+          </div>
+        </div>
+        <!-- /card-one -->
+
+        <div class="card">
+          <img id="card-image" src="../images/R.png" alt="Avatar" />
+          <div style="text-align: center">
+            <h2><b>Clients Review</b></h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Perferendis sunt ducimus minus dolore a tempore culpa officiis
+              facilis qui voluptates, dolor mollitia? Perspiciatis, eos alias
+              corrupti ullam sint rem impedit!
+            </p>
+          </div>
+        </div>
+        <!-- /card-two -->
+
+        <div class="card">
+          <img id="card-image" src="../images/Rr.png" alt="Avatar" />
+          <div style="text-align: center">
+            <h2><b>Our Contact</b></h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+              numquam blanditiis iste autem sunt doloremque et nesciunt vel
+              incidunt ullam iure, veritatis nulla maxime molestiae maiores at
+              doloribus suscipit aliquid!
+            </p>
+          </div>
+        </div>
+        <!-- /card-three -->
+      </section>
+    </div>
+
+    <div class="article" id="pricing">
+      <div class="card-article">
+        <img id="card-image-article" src="../images/porsche-911-turbo-2020-ar-circuit.jpg" alt="info" />
+        <div class="content">
+          <h2><b>porsche</b></h2>
+          <p>200 $/day</p>
+        </div>
+      </div>
+      <!-- /card-one -->
+      <div class="card-article">
+        <img id="card-image-article" src="../images/2017-lamborghini-aventador-s-coupe.jpg" alt="info" />
+        <div class="content">
+          <h2><b>lamborghini</b></h2>
+          <p>300 $/day</p>
+        </div>
+      </div>
+      <div class="card-article">
+        <img id="card-image-article" src="../images/20220113023852_Mercedes.jpg" alt="info" />
+        <div class="content">
+          <h2><b>mercedes-benz</b></h2>
+          <p>100 $/day</p>
+        </div>
+      </div>
+      <div class="card-article">
+        <img id="card-image-article" src="../images/mansory_lamborghini_venatus_2020_01.jpg" alt="info" />
+        <div class="content">
+          <h2><b>lamborghini urus</b></h2>
+          <p>200 $/day</p>
+        </div>
+      </div>
+      <div class="card-article">
+        <img id="card-image-article" src="../images/suv-rolls-royce-insert-face-noir.jpg" alt="info" />
+        <div class="content">
+          <h2><b>rolls-royce</b></h2>
+          <p>400 $/day</p>
+        </div>
+      </div>
+      <div class="card-article">
+        <img id="card-image-article" src="../images/Rl.jpg" alt="info" />
+        <div class="content">
+          <h2><b>bentley</b></h2>
+          <p>300 $/day</p>
+        </div>
+      </div>
+      <div class="card-article">
+        <img id="card-image-article" src="../images/ford-mustang.jpg" alt="info" />
+        <div class="content">
+          <h2><b>mustang </b></h2>
+          <p>300 $/day</p>
+        </div>
+      </div>
+
+      <div class="card-article">
+        <img
+          id="card-image-article"
+          src="../images/mc.jpg"
+          alt="Avatar"
+        />
+        <div class="content">
+          <h2><b>mclaren</b></h2>
+          <p>300 $/day</p>
+        </div>
+      </div>
+      <!-- /card-two -->
+
+      <div class="card-article">
+        <img
+          id="card-image-article"
+          src="../images/Jaguar Car.jpg"
+          alt="Avatar"
+        />
+        <div class="content">
+          <h2><b>jaguar</b></h2>
+          <p>300 $/day</p>
+        </div>
+      </div>
+      <!-- /card-three -->
+    </div>
+    <h2 style="color: rgb(54, 18, 18); text-align: center; font-size: 100px ; font-weight: bold ; margin-bottom :10px;">
+      <b>Take your car on the route</b>
+    </h2> 
+    <section class="book" id="book">
+     
+      <div class="row">
+        <div class="image">
+          <img src="../images/car_icon1.png" alt="" />
+        </div>
+
+        <form action="">
+          <div class="inputBox">
+            <h3>Car Model</h3>
+            <select class="inputBox">
+              <option value="porche">porche</option>
+              <option value="lamborghini">lamborghini</option>
+              <option value="mercedes-benz">mercedes-benz</option>
+              <option value="lamborghini urus">lamborghini urus</option>
+              <option value="mustang">mustang</option>
+              <option value="mclaren">mclaren</option>
+              <option value="jaguar">jaguar</option>
+            </select>
+          </div>
+
+          <div class="inputBox">
+            <h3><pre> FROM</pre></h3>
+            <input type="date" />
+          </div>
+          <div class="inputBox">
+            <h3><pre> TO</pre></h3>
+            <input type="date" />
+          </div>
+          <input type="submit" class="btn" value="check" />
+        </form>
+      </div>
+    </section>
+
+    <div class="footer" id="footer">
+      <div class="social">
+        <a href="#"><i class="fab fa-instagram">I</i></a>
+        <a href="#"><i class="fab fa-snapchat">S</i></a>
+        <a href="#"><i class="fab fa-twitter">T</i></a>
+        <a href="#"><i class="fab fa-facebook-f">F</i></a>
+      </div>
+
+      <ul class="list">
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">Services</a>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+        <li>
+          <a href="#">Terms</a>
+        </li>
+        <li>
+          <a href="#">Privacy Policy</a>
+        </li>
+      </ul>
+      <p class="copyright">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae
+        exercitationem ab cupiditate earum asperiores tenetur debitis ducimus
+        impedit cum, odio aliquid, nisi sunt ullam nihil maxime eius quos culpa.
+        Praesentium!
+      </p>
+      <p class="copyright">Luxury Cars @ 2022</p>
+    </div>
+    
+    
+    
+  </body>
+</html>

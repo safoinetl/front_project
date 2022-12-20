@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../signcss.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <!-- LOGO -->
+
+      <div class="logo">
+        <b> <i> Luxury cars </i> </b>
+        <img src="../images/car_icon.png" alt="logo" />
+      </div>
+
+      <!-- NAVIGATION MENU -->
+
+      <ul class="nav-links">
+        <!-- USING CHECKBOX HACK -->
+
+        <input type="checkbox" id="checkbox_toggle" />
+        <label for="checkbox_toggle" class="hamburger">☰</label>
+
+        <!-- NAVIGATION MENUS -->
+
+        <div class="menu">
+          <li><a href="homePaage.html"> <b> Home</b></a></li>
+
+          <li><a href="#footer"> <b> About </b></a></li>
+
+          <li class="services">
+            <a href="#"> <b> Services </b></a>
+
+            <!-- DROPDOWN MENU -->
+
+            <ul class="dropdown">
+              <li><a href="#"><b>Dropdown 1</b> </a></li>
+
+              <li><a href="#"><b>Dropdown 2</b></a></li>
+
+              <li><a href="#"><b>Dropdown 3</b></a></li>
+            </ul>
+          </li> 
+
+          <li><a href="#pricing"> <b> Pricing</b></a></li>
+
+          <li><a href="./login.html"> <b> Login</b></a></li>
+        </div>
+      </ul>
+    </nav>
+    <div class="space"></div>
+    <div class="card">
+      <div class="left">
+        <div class="lg">
+          <h2>Login</h2>
+
+        </div>
+        <div class="group">
+          <label>Username</label>
+          <input type="text" placeholder="username" />
+        </div>
+
+        <div class="group">
+          <label>Password</label>
+          <input type="password" placeholder="password" />
+          <a href="#">Forget password!</a>
+        </div>
+        <div class="group">
+          <a href="./homePaage.html"><button>SIGN IN</button></a>
+        </div>
+
+        <div class="rg">
+          Not a member ?<a href="./signup.html" class="aa">
+            Register
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
